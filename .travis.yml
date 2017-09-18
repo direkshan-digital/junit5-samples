@@ -15,3 +15,6 @@ jobs:
       script: cd $TRAVIS_BUILD_DIR/junit5-vanilla-gradle && ./gradlew test
     - stage: junit5-vanilla-maven
       script: cd $TRAVIS_BUILD_DIR/junit5-vanilla-maven && ./mvnw test
+    - stage: junit5-vanilla-java9
+      jdk: oraclejdk9
+      script: cd $TRAVIS_BUILD_DIR/junit5-vanilla-java9 && ./build.jsh
